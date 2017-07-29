@@ -11,6 +11,7 @@ html{
   background-color: rgb(255,255,255);
   margin: 16px auto 0;
 }
+/*Estilos del nav*/
 nav{
   position: relative;
   height: 48px;
@@ -23,6 +24,7 @@ nav>button{
   background-color: transparent;
   border: 0;
   position: absolute;
+  color: gray;
 }
 button>i.fa{
   font-size: 36px;
@@ -39,7 +41,95 @@ button.ui-chat{
   right: 0;
   bottom: unset;
 }
-/*First No Mobile scrren >720px*/
+.logo{
+  position: relative;
+  height: 100%;
+  max-width: calc(100% - 96px);
+  overflow: hidden;
+  left: 48px;
+}
+.logo>img{
+  display: inline-block;
+  height: 100%;
+}
+/*Estilos del Slider*/
+ul.slider{
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+ul.slider>li{
+  display: inline-block;
+  width: 340px;
+  height: 480px;
+  position: relative;
+  margin: 10px;
+}
+figure.profile{
+  width: 100%;
+  height: 100%;
+  border: 1px solid #f2f2f2;
+  box-shadow: 0 0 2px 2px #f2f2f2;
+}
+figure.profile>img{
+  height: calc(100% - 64px);
+  max-width: 100%;
+  display: inline-block;
+  width: 100%;
+  object-fit: cover;
+}
+figure.profile>figcaption{
+  height: 64px;
+  margin: 0 10px;
+}
+figure.profile>figcaption>h1,
+figure.profile>figcaption>p{
+  text-align: left;
+  padding-left: 1rem;
+}
+figure.profile>figcaption>h1{
+  font-size: 1.4rem;
+  line-height: 1.5rem;
+}
+figure.profile>figcaption>p{
+  font-size: 1rem;
+}
+figure.profile>figcaption>h1>.age::before{
+  content: ", ";
+}
+/*Botones*/
+.ui-small{
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  border: 10px solid #f2f2f2;
+  background-color: #fff;
+}
+.ui-big{
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  border: 10px solid #f2f2f2;
+  background-color: #fff;
+}
+button.ui-small>i.fa-undo{
+  color: gold;
+  font-size: 24px;
+}
+button.ui-big>i.fa-times{
+  color: red;
+}
+button.ui-big>i.fa-heart{
+  color: green;
+}
+button.ui-small>i.fa-star{
+  color: blue;
+  font-size: 24px;
+}
+
+
+/*First No Mobile screen >720px*/
 @media screen and (min-width: 720px){
   body{
     text-align: center;
@@ -61,4 +151,3 @@ button.ui-chat{
     top: 50%;
     transform: translateY(-50%);
   }
-}
