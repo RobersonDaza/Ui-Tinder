@@ -41,6 +41,19 @@ button.ui-chat{
   right: 0;
   bottom: unset;
 }
+button.ui-chat-dos{
+  left: unset;
+  top: 0;
+  right: 150px;
+  color: #DF4723;
+  bottom: unset;
+}
+button.ui-fire{
+  left: 0;
+  top: 0;
+  right: unset;
+  bottom: unset;
+}
 .logo{
   position: relative;
   height: 100%;
@@ -127,7 +140,25 @@ button.ui-small>i.fa-star{
   color: blue;
   font-size: 24px;
 }
-
+.new-matches{
+    position: absolute;
+    display: inline-block;
+    top: 70px;
+    left: 10px;
+    color: #DF4723;
+    font-size: 1em;
+}
+.new-1{
+    position: absolute;
+    top: 70;
+    left: 60;
+    border-radius: 50%;
+    background-color: #DF4723;
+    color: #ffffff;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+}
 
 /*First No Mobile screen >720px*/
 @media screen and (min-width: 720px){
